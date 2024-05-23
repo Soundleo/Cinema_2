@@ -2,7 +2,7 @@
 
 print('******************************************************************************************************************************************')
 print('******************************************************************************************************************************************')
-print('Para informar qual sua sala seu file vai passar precisamos de alguns dados para oferecer uma boa experencia para vc!')
+print('Para informar qual sua sala seu filme vai passar precisamos de alguns dados para oferecer uma boa experencia para vc!')
 
 import os 
 import time
@@ -24,11 +24,6 @@ while True:
     match sala:
         case '1': 
             if idade > 0:
-                os.system('cls')
-                print (f'Senhor {nome} o seu filme será exibido na sala 1. ')
-                print ('Tenha um bom filme, aproveite compre uma pipoca.')
-                time.sleep(10)
-                os.system('cls')
                 break
             else:
                 os.system('cls')
@@ -37,11 +32,6 @@ while True:
                 os.system('cls')
         case '2':
             if idade >= 12:
-                os.system('cls)')
-                print (f'Senhor {nome} o seu filme será exibido na sala 2. ')
-                print ('Tenha um bom filme, aproveite compre uma pipoca.')
-                time.sleep(10)
-                os.system('cls')
                 break
             else:
                 os.system('cls')
@@ -50,11 +40,6 @@ while True:
                 os.system('cls') 
         case '3':
             if idade >= 14:
-                os.system('cls')
-                print (f'Senhor {nome} o seu filme será exibido na sala 3 ')
-                print ('Tenha um bom filme, aproveite compre uma pipoca.')
-                time.sleep(10)
-                os.system('cls')
                 break
             else:
                 os.system('cls')
@@ -62,12 +47,7 @@ while True:
                 time.sleep(10)
                 os.system('cls')  
         case '4': 
-            if idade >= 16:
-                os.system('cls')
-                print (f'Senhor {nome} o seu filme será exibido na sala 4 ')
-                print ('Tenha um bom filme, aproveite compre uma pipoca.')
-                time.sleep(10)
-                os.system('cls')  
+            if idade >= 16: 
                 break
             else:
                 os.system('cls')
@@ -76,11 +56,6 @@ while True:
                 os.system('cls')
         case '5':
             if idade >= 18:
-                os.system('cls')
-                print (f'Senhor {nome} o seu filme será exibido na sala 5 ')
-                print ('Tenha um bom filme, aproveite compre uma pipoca. Para este filme temos uma proção no combo de pipoca e refri')
-                time.sleep(10)
-                os.system('cls') 
                 break
             else:
                 os.system('cls')
@@ -88,6 +63,14 @@ while True:
                 time.sleep(10)
                 os.system('cls')
         case _:
+            os.system('cls')
             print('opçao inválida')
+            print('informe outra sala')
+
             
             continue
+    
+os.system('cls')
+print (f'Senhor {nome} o seu filme será exibido na sala 1. ')
+print ('Tenha um bom filme, aproveite compre uma pipoca.')
+time.sleep(10)
