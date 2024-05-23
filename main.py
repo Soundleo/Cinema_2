@@ -71,6 +71,6 @@ while True:
             continue
     
 os.system('cls')
-print (f'Senhor {nome} o seu filme será exibido na sala 1. ')
+print (f'Senhor {nome} o seu filme será exibido na sala {sala}. ')
 print ('Tenha um bom filme, aproveite compre uma pipoca.')
 time.sleep(10)
